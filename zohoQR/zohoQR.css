@@ -1,0 +1,102 @@
+body{
+    background-image: url(./images/Bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 1440px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'semibold';
+    src: url(./zohofont/OpenType-TT/Zoho\ Puvi\ Semibold.ttf);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(./zohofont/OpenType-TT/Zoho\ Puvi\ Regular.ttf);
+}
+.container{
+    position: relative;
+    top: 120px;
+    left: 310px;
+    width: 820px;
+    height: 460px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #0000000F;
+    border-radius: 4px;
+    opacity: 1;
+}
+.segment{
+    position: absolute;
+    top: 128px;
+    left: 750px;
+    width: 0px;
+    height: 456px;
+    border: 2px solid #F4F4F4;
+    opacity: 1;
+}
+.leftcontainer{
+    top: 120px;
+    left: 310px;
+    width: 440px;
+    height: 437px;
+    opacity: 1;
+}
+
+#logo{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 72px;
+    padding-bottom: 24px;
+    height: 27px;
+}
+.main{
+    top: 211px;
+    left: 350px;
+    width: 360px;
+    height: 306px;
+    opacity: 1;
+}
+#head{
+    position: relative;
+    font-family: 'semibold';
+    top: 24px;
+    left: 40px;
+    font-size: 20px;
+}
+#content{
+    position: relative;
+    font-family: 'regular';
+    font-size: 13px;
+    top: -20px;
+    left: 70px;
+}
+#QR{
+    position: relative;
+    left: 109px;
+    width: 220px;
+    height: 218px;
+}
+#CenterZ{
+    position: absolute;
+    top: 202px;
+    left: 205px;
+    width: 31px;
+    height: 40px;
+}
+#signInBtn{
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #DBDBDB;
+    left: 120px;
+    height: 40px;
+    width: 211px;
+}
+svg{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+}
