@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="userDetails" id="name">
+        <input type="text" name="userName" id="user" autocomplete="off">
+        <button id="start" onclick="username()">Start Game</button>
+    </div>
+    <div class="instructor" id="instructions">
+        <p>Each Red Food increase the point by 10</p>
+        <p>Each color Food increase the point by 20 (Appears once for every 2 minutes)</p>
+        <p>A power up friut appears for every 10 fruit consumption</p>
+        <p>Power up fruit gives various abilities for snake for certain second</p>
+        <p>Press Enter to Pause</p>
+        <p>Press Space to Continue</p>
+        <h2>Press Space to Begin!!</h2>
+    </div>
+    <div class="menus" id="menu">
+        <p id="score">Score : 0</p>
+        <p id="timer">Timer : 00:00</p>
+        <p id="player">Player : </p>
+        <p id="power">Special Power : None</p>
+    </div>
+    <div class="gameover">
+        <img src="./images/gameover.png" id="over">
+        <h2 id = restart>Press Space to Restart</h2>
+    </div>
+    <div class="container" id="content">
+        <div id = "board"></div>
+    </div>
+</body>
+</html>

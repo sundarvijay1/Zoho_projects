@@ -1,0 +1,21 @@
+html,body{
+    background-color: rgb(58, 58, 58);
+}
+.container{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+.main img{
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.slide{
+    position:relative;
+    display: none;
+}
+.def{
+    display: block;
+    margin-top: 10%;
+}

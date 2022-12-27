@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(135deg,#7d1bbb,#0dc9f0);
+    height: auto;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+img{
+    height: 100px;
+    width:auto;
+}
+.container{
+    display:flex;
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    width: auto;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.3);
+  }
+  h3{
+    padding: 10px;
+  }
