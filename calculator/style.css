@@ -1,0 +1,57 @@
+.main{
+  position : relative;	
+  height: fit-content;
+  width: 450px;
+  border-radius : 20px;
+  box-sizing: border-box;
+  background:grey;
+  padding :10px;
+  padding-right:10px;
+  margin-top:100px;
+  margin-left:480px;
+  box-shadow: 7px 7px 10px rgba(0,0,0,0.3);
+}
+.option{
+	padding-left:25px;
+	padding-right:25px;
+	background:grey;
+	color:white;
+	
+}
+.operation-orange{
+	padding-left:25px;
+	padding-right:25px;
+	background:orange;
+	color:white;
+	
+}
+.operation-pink{
+	padding-left:25px;
+	padding-right:25px;
+	background:pink;
+	color:white;
+}
+.numbers{
+	padding-left:25px;
+	padding-right:25px;
+	background:black;
+	color:white;
+}
+input[type=button] {
+	width:80px;
+	float:centre;
+}
+table{
+	border:5px solid black;
+	border-radius:10px;
+	background:#B2BEB5
+}
+#panel{
+	border: 2px solid white;
+	background:black;
+	font-size:20px;
+	color:green;
+	width:410px;
+	outline:none;
+	/*direction:rtl;*/
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calculator</title>
+<link rel=stylesheet href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<div class = main>
+	<table id="tab">
+		<tr>
+			<td colspan="5"><input type="text" id="panel" value="" placeholder="0"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="option" value="C" onclick = del_scr()></td>
+			<td><input type=button class="option" value="<--"></td>
+			<td><input type=button class="option" value="=" onclick ="operators('=')"></td>
+			<td><input type=button class="operation-orange" value="π" onclick ="operators('π')"></td>
+			<td><input type=button class="operation-pink" value="%" onclick ="operators('%')"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="numbers" value="7" onclick=val(7)></td>
+			<td><input type=button class="numbers" value="8" onclick=val(8)></td>
+			<td><input type=button class="numbers" value="9" onclick=val(9)></td>
+			<td><input type=button class="operation-orange" value="X^" onclick ="operators('^')"></td>
+			<td><input type=button class="operation-pink" value="/" onclick ="operators('/')"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="numbers" value="4" onclick=val(4)></td>
+			<td><input type=button class="numbers" value="5" onclick=val(5)></td>
+			<td><input type=button class="numbers" value="6" onclick=val(6)></td>
+			<td><input type=button class="operation-orange" value="ln" onclick ="operators('ln')"></td>
+			<td><input type=button class="operation-pink" value="*" onclick ="operators('*')"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="numbers" value="1" onclick=val(1)></td>
+			<td><input type=button class="numbers" value="2" onclick=val(2)></td>
+			<td><input type=button class="numbers" value="3" onclick=val(3)></td>
+			<td><input type=button class="operation-orange" value="√‾" onclick ="operators('√‾')"></td>
+			<td><input type=button class="operation-pink" value="-" onclick ="operators('-')"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="operation-pink" value="±" onclick ="operators('±')"></td>
+			<td><input type=button class="numbers" value="0" onclick=val(0)></td>
+			<td><input type=button class="operation-pink" value="." onclick="val('.')"></td>
+			<td><input type=button class="operation-orange" value="x2" onclick="operators('x2')"></td>
+			<td><input type=button class="operation-pink" value="+" onclick="operators('+')"></td>
+		</tr>
+		<tr>
+			<td><input type=button class="operation-pink" value="("></td>
+			<td><input type=button class="operation-pink" value=")"></td>
+			<td><input type=button class="operation-pink" value="cos" onclick ="operators('cos')"></td>
+			<td><input type=button class="operation-pink" value="sin" onclick ="operators('sin')"></td>
+			<td><input type=button class="operation-pink" value="tan" onclick ="operators('tan')"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User form submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <form class="myform" onsubmit = "return submit()">
+            <div id = "div_user">
+                <input type="text" id="user_name" placeholder="Name">
+                <div id = tooltip_name>
+                    <span id = tooltiptext_name>Enter a valid Name</span>
+                </div>
+            </div>
+            <div id = "div_DOB">
+                <input type="text" placeholder="MM-DD-YYYY" id = DOB>
+                <div id = tooltip_DOB>
+                    <span id = tooltiptext_DOB>Enter a valid date</span>
+                </div>
+            </div><br>
+            <div id="div_gender">
+                <select id = "gender">
+                    <option value="none">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Male">Female</option>
+                </select>
+                <div id = tooltip_gen>
+                    <span id = tooltiptext_gen>Complete Gender</span>
+                </div>
+            </div>
+            <div id="div_mobile">
+                <input type="text" placeholder="Mobile number" id="mobile">
+                <div id = tooltip_mob>
+                    <span id = tooltiptext_mob>Enter a valid mobile number</span>
+                </div>
+            </div><br> 
+        </form>
+        <div id="btn">
+            <input type="submit" value="Submit" id="submit_btn" onclick="submit()">&nbsp;
+            <input type="reset" value="Reset" id="reset_btn" onclick = "reset()">
+        </div>
+    </div>
+    <div class = container id = table_container>
+        <h3>User Information</h3>&emsp;
+    </div>
+</body>
+</html> 
