@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <div class="details">
+        <p id="score">Score:0</p>
+        <p id="life">Life:3</p>
+        <p id="timer">Timer : 00:00</p>
+        <p id="level"><strong>Level : 1</strong></p>
+        <img src="./images/settings.png" alt="settings" id = settings onclick="settings()">
+    </div>
+    <div class="set" id="controler">
+        <form name="ctrl">
+            <input type="radio" name="control" id="control" value ="Keyboard" checked>Keyboard 
+            <input type="radio" name="control" value="mouse" id="control">Mouse
+        </form>
+    </div>
+    <div class="levelup" id = popup>
+        <img src="./images/close.png" alt="close" id = "close" onclick="clearpopup()">
+        <img src="./images/levelup.gif" alt="levelup" id = "gif">
+        <h1>Level Up</h1>
+    </div>
+    <div class="gamelose" id="gameEnd">
+        <img src="./images/26184-sad-star.gif" alt="sad gif" srcset="" id="gifResult">
+        <h1 id="lose">You Lost your Match</h1>
+        <button onclick="restart()" id="btnrestart">Restart</button>
+    </div>
+    <div class="gamewon" id="gamecomplete">
+        <img src="./images/26187-happy-star.gif" alt="won" id="gifResult">
+        <h1>You Won your Match</h1>
+        <button onclick="restart()" id="btnrestart">Restart</button>
+    </div>
+    <div class="container" id =main>
+    </div>
+    <div class="pad">
+        <div id="ball"></div>
+        <div id="paddle"></div>
+    </div>
+   
+</body>
+</html>

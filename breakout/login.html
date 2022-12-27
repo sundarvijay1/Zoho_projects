@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/front.css">
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <img src="./images/background copy.jpg" alt="background" id="background">
+    <div class="container"> 
+        <form onSubmit = "return start()" action="./main.html" method="get" autocomplete="off"> 
+            <input type="text" name="user_datails" id="user"><br><br>
+            <input id="btnstart" type="submit" value = "Start Game">
+        </form>
+    </div>
+    <br><br>
+    <div class="creator" id="creatormain" style="visibility: hidden;">
+        <img src="./images/create.jpeg" alt="createdby" id="creatorimg">
+        <p class ="descrip" id="crename">PADMASUNDAR</p>
+        <p class = "descrip" id="description">Javascript Developer</p>
+        <div class="content">
+            <small id="num" style="visibility: hidden;">8489262463</small>
+            <small id="mailID" style="visibility: hidden;">padmasundarvijay@gmail.com</small>
+            <small id="githubID" style="visibility: hidden;">sundarvijay1</small>
+        </div>
+        <img src="./images/phone.gif" alt="mobile" id="phone" class="contact" onclick="show('num')">
+        <img src="./images/mail.gif" alt="mail" id="mail" class="contact" onclick="show('mailID')">
+        <img src="./images/github.gif" alt="github" id="github" class="contact" onclick="show('githubID')">
+    </div>
+    <div class="rules">
+        <ul>
+            <li>Player will be provided with 3 lives</li>
+            <li>Once the life reaches 0, the player will be eliminated</li>
+            <li>Each block hit from paddle will get 10 points</li>
+            <li>Continuous hit on blocks will provide (10 * block hit count)</li>
+            <li>eg:Total 3 continuous hit = 10*1 + 10*2 + 10*3 = 60 points</li>
+            <li>Number of level:3</li>
+        </ul>
+        <h1>Good Luck</h1>
+        <img src="./images/creator.png" alt="creator" id="creator_details" onclick="show('creatormain')">
+    </div>
+</body>
+</html>

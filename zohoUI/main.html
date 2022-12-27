@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="./main.js"></script>
+    <title>UI</title>
+</head>
+<body>
+    <div id="whole_container1">
+        <div class="header" id='pan5'>
+            <img src="./Interview Icons/Profile Info/DisplayPicture.png" class="headerImg">
+            <div class="head_Content">
+                <img src="./Interview Icons/Header/Notification.png" class="headerIcon">
+                <div class="head_onhover"></div>
+            </div>
+            <div class="head_Content">
+                <img src="./Interview Icons/Header/Info.png" class="headerIcon">
+                <div class="head_onhover"></div>
+            </div>
+            <div class="head_Content">
+                <img src="./Interview Icons/Header/Search.png" class="headerIcon">
+                <div class="head_onhover"></div>
+            </div>
+        </div>
+        <div class="navigator" id="navigationBar">
+            <img src="./Interview Icons/Icon.png" class="navicon">
+            <div class="arrow" id='arrow'onclick="toggle()">
+                <img src="./Interview Icons/arrow.png">
+            </div>
+            <div class="blue" id="blue_bg"></div>
+            <div class="menu" id="menus">
+                <div id="icon1" class="icons" onmouseover="image_change(this.id)" onmouseleave="image_revert(this.id)">
+                    <div class="toggle" id="tog1"></div>
+                    <img src="./Interview Icons/Nav Bar/White/Profile.png" class="icons_navigator">
+                    <div class="names"><p id="name1">Profile Info</p></div>
+                </div>
+                <div id="icon2" class="icons" onmouseover="image_change(this.id)" onmouseleave="image_revert(this.id)">
+                    <div class="toggle" id="tog2"></div>
+                    <img src="./Interview Icons/Nav Bar/White/Security.png" class="icons_navigator">
+                    <div class="names"><p id="name2">Security</p></div>
+                </div>
+                <div  id="icon3" class="icons" onmouseover="image_change(this.id)" onmouseleave="image_revert(this.id)">
+                    <div class="toggle" id="tog3"></div>
+                    <img src="./Interview Icons/Nav Bar/White/Cloud.png" class="icons_navigator">
+                    <div class="names"><p id="name3">Cloud</p></div>
+                </div>
+                <div id="icon4" class="icons" onmouseover="image_change(this.id)" onmouseleave="image_revert(this.id)">
+                    <div class="toggle" id="tog4"></div>
+                    <img src="./Interview Icons/Nav Bar/White/Certificates.png" class="icons_navigator">
+                    <div class="names"><p id="name4">Certificate</p></div>
+                </div>
+                <div id="icon5" class="icons" onmouseover="image_change(this.id)" onmouseleave="image_revert(this.id)">
+                    <div class="toggle" id="tog5"></div>
+                    <img src="./Interview Icons/Nav Bar/White/Wallet.png" class="icons_navigator">
+                    <div class="names"><p id="name5">Wallet</p></div>
+                </div>
+            </div>
+            <div class="darkmode">
+                <div class="mode_images" onclick="modes()">
+                    <img class="active" src="./Interview Icons/night-mode.png" id="moon" name="dark">
+                    <img class="inactive" src="./Interview Icons/light-mode.png" id="sun" name="light">
+                </div>
+                <div class="dark_onhover"></div>
+            </div>
+        </div>
+        <div class="container" id="contain">
+            <div class="title">
+                <h4 class="titles">Profile Info</h4>
+            </div>
+            <div class="pannelSet1">
+                <div class="pannel1" id="pan1">
+                    <div class="profile">
+                        <img src="./Interview Icons/Profile Info/DisplayPicture.png" class="profileImg">
+                        <p class="medium_font profileName">Kathryn Diaz</p>
+                        <p class="regular_font profileEmail">kathryn_diaz_97@zoho.com</p>
+                        <button class="btn" id="edit">Edit</button>
+                    </div>
+                    <div class="segment1">
+                        <div class="block">
+                            <div class="divIcon1">
+                                <img src="./Interview Icons/Profile Info/Gender.png" class="icon genicon">
+                            </div>
+                            <div class="div1">
+                                <div class="notations">GENDER</div>
+                                <div class="data dataposition">Female</div>
+                            </div>
+                        </div>
+                        <div class="block block2">
+                            <div class="divIcon1">
+                                <img src="./Interview Icons/Profile Info/Language.png" class="icon">
+                            </div>
+                            <div class="div1">
+                                <div class="notations">LANGUAGE</div>
+                                <div class="data dataposition">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segment2">
+                        <div class="block">
+                            <div class="divIcon1">
+                                <img src="./Interview Icons/Profile Info/Location.png" class="icon">
+                            </div>
+                            <div class="div1">
+                                <div class="notations">COUNTRY</div>
+                                <div class="data dataposition">United Stated</div>
+                            </div>
+                            
+                        </div>
+                        <div class="block block4">
+                            <div class="divIcon1">
+                                <img src="./Interview Icons/Profile Info/TimeZone.png" class="icon">
+                            </div>
+                            <div class="div1">
+                                <div class="notations">TIME ZONE</div>
+                                <div class="data dataposition">Eastern Daylight Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pannel2" id="pan2">
+                    <div class="pannel2block">
+                        <h4 class="titles">FAQs</h4>
+                        <a href="" id="seeall" class="font_medium16">See all</a>
+                    </div>
+                    <p class="font_medium16">How to secure your Zoho Account?</p>
+                    <p class="font_medium16">How to configure MFA for my Zoho account?</p>
+                    <p class="font_medium16">How to change my password?</p>
+                    <p class="font_medium16">Where can i manage all my active sessions?</p>
+                </div>
+            </div>
+            <div class="pannelSet2">
+                <div class="pannel3" id="pan3">
+                    <h4 class="titles">My Email Address</h4>
+                    <img src="./Interview Icons/Header/Info.png" class="info">
+                    <img src="./Interview Icons/Email.png" class="bigIMG">
+                    <p class="font_medium14">No Email address added yet!</p>
+                    <button class="btn addBtn">Add Email</button>
+                </div>
+                <div class="pannel4" id="pan4">
+                    <h4 class="titles">My Mobile Number</h4>
+                    <img src="./Interview Icons/Header/Info.png" class="info">
+                    <img src="./Interview Icons/Mobile.png" class="bigIMG" id="mobileImg">
+                    <p class="font_medium14">No Mobiles numbers added yet!</p>
+                    <button class="btn addBtn" id="mobBtn" onclick="mobileNumber()">Add Mobile</button>
+                </div>
+                <div class="pannel4" id="addnum">
+                    <h4 class="titles">My Mobile Number</h4>
+                    <img src="./Interview Icons/Header/Info.png" class="info">
+                    <p onclick="mobileNumber()" class="bold16" id="newNumber">Add new mobile</p>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div id="whole_container2">
+        <div class="mobile_number" id="mobilePopup">
+            <div>
+                <h4 class="titles">Add Mobile Number</h4>
+                <div class="close_div">
+                    <img src="./Interview Icons/cancel.png" class="close" onclick="cancel('mobilePopup')">
+                </div>   
+            </div>
+            <div>
+                <p class="regular_font">Please enter the mobile number you what add with your Zoho account</p>
+            </div>
+            <div>
+                <p class="semi12">Enter mobile number</p>
+            </div>
+            <div class="ip_div">
+                <div class="country">
+                    <img src="./Interview Icons/india.png" >
+                </div>
+                <div class="ip">
+                    <div class="regular_font code">+91</div>
+                    <input type="number" id="dataMobile">
+                </div>
+                <div>
+                    <button class="btn sendotp" onclick="otpOpen()">Send Otp</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_number" id="OTPPopup">
+            <div>
+                <h4 class="titles">Enter OTP</h4>
+                <div class="close_div">
+                    <img src="./Interview Icons/cancel.png" class="close" onclick="cancel('OTPPopup')">
+                </div>   
+                <p class="regular_font">An 6 digit OTP is sent your mobile number. Please enter here to verify.</p>
+                <p class="semi12">Enter OTP</p>
+                <div class="input_OTP_div" id="inputOTPdiv">
+                    <input type="number" class="input_OTP_tag" id="input_digit_1" onkeyup="changefocus(event)">
+                    <input type="number" class="input_OTP_tag" id="input_digit_2" disabled onkeyup="changefocus(event)">
+                    <input type="number" class="input_OTP_tag" id="input_digit_3" disabled onkeyup="changefocus(event)">
+                    <input type="number" class="input_OTP_tag" id="input_digit_4" disabled onkeyup="changefocus(event)">
+                    <input type="number" class="input_OTP_tag" id="input_digit_5" disabled onkeyup="changefocus(event)">
+                    <input type="number" class="input_OTP_tag" id="input_digit_6" disabled onkeyup="changefocus(event)">
+                </div>
+                <p class="semi16">Resend OTP</p>
+                <div class="buttons">
+                    <button class="btn" onclick="verifyOTP()" style="display: inline-flex;">Verify</button>
+                    <button class="otp_button" onclick="revert()">Change Mobile Number</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

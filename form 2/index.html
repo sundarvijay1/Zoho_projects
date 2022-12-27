@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel=stylesheet href="style.css">
+<title>form validation</title>
+<script src = "script.js"></script>
+</head>
+<body>
+	<div class = main>
+	<h2 style="text-align:center">Form validation</h2>
+	<hr>
+	 <form id = "data" class = myform name = "myform" action = "./valid.html" onsubmit = " return result()" method = "get" >
+		  <div class = content id=fnames>
+			<input type = "text" maxlength=20  id = "fname" placeholder = FirstName onchange = "validateFName(this.value)" autocomplete="off">&emsp;
+		  </div>
+          <div class = content id = lnames>
+            <input type = "text" maxlength =20 id = "lname" placeholder = LastName onchange = "validateLName(this.value)" autocomplete="off">
+          </div>
+		  <br id=del1>
+		  <div class = content id=mail1>
+			<input type = "email" id = "mail" placeholder = xyz@example.com onchange = "validateEmail(this.value)" autocomplete="off">&emsp;
+		  </div>
+          <div class="content" id="pass">
+            <input type = "password" id = "passwrd" placeholder = Password onkeypress = "validatePassword(this.value)" autocomplete="off"> 
+          </div>
+		  <br id = del2>
+		  <div class = content id=genders>
+			<input type="radio"  id =g1 name = "gender" value="male"> Male
+			<input type="radio"  id =g2 name = "gender" value="female"> Female
+			<input type="radio"  id =g3 name = "gender" value="Others"> Others &nbsp;&nbsp; 
+		  </div>
+          <div class="content" id = num>
+            <input type = "text" maxlength = 10  placeholder = MobileNumber id="mobile" onchange = "validatePhoneNumber(this.value)" autocomplete="off">
+          </div>
+		  <br id = del3>
+		  <div class= content-terms>
+		  	<input type = checkbox >People who use our service may have uploaded your contact information to Zoho.
+		  </div><br>
+		  <div class= content-terms>
+		  	<input type = checkbox >By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.
+		  </div>
+		  <br  id=del4>
+		  <div class = content>
+		  	<button id ="subBtn">Submit</button>
+		  </div>
+		  <br>
+		  <br>				
+	  </form> 
+	</div>
+</body>
+</html>

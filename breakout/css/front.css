@@ -1,0 +1,114 @@
+body{
+    background:#0e0e0e;
+}
+.container{
+    display: flex;
+    height: 100px;
+    width: 200px;
+    margin-left: 600px; 
+    margin-top: 5%;
+    border-radius: 5px;
+    background:white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnstart{
+    position: relative;
+    display: flex;
+    background: blue;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    left: 20px;
+}
+#background{
+    margin-top: 100px;
+    margin-left: 530px;
+}
+.rules{
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background: white;
+    border-radius: 8px;
+    left: 460px;
+    padding: 10px;
+    font-family:'Verdana';
+}
+.creator{
+    position: absolute;
+    top: 48%;
+    height: 330px;
+    width: 430px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-family:'Verdana';
+}
+#creator_details{
+    position: relative;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+}
+#creatorimg{
+    position: relative;
+    display: flex;
+    border-radius: 999px;
+    border: 2px solid blue;
+    height: 100px;
+    width: 100px;
+    left: 165px;  
+}
+.descrip{
+    display: flex;
+    color: blue;
+    font-family: Verdana;
+    justify-content: center;
+}
+.contact{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    top: 5px;
+}
+#num{
+    background: #979998;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#mail{
+    position: relative;
+    left: 50px;
+    display: inline;
+}
+#mailID{
+    background: #979998;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#github{
+    display: inline;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: -5px;
+    left: 120px;
+}
+#githubID{
+    background: #979998;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}

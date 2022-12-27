@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div><small id = outcome></small></div>
+        <img src="./images/eye.png" alt="show_pass" id = "eye" onclick="disp()">
+        <img src="./images/hidden.png" alt="show_pass" id = "hide" onclick="disp()">
+        <input type="password" name="" id="password" placeholder="Password" onfocus = "visible1()"><span id="tooltip" >
+            
+            <ul>
+                <li id = "len">
+                    Password must contain minimum 8 character
+                </li>
+                <li id="upper">
+                    Password must contain minimum 1 Uppercase
+                </li>
+                <li id="lower">
+                    Password must contain minimum 1 Lowercase
+                </li>
+                <li id="special">
+                    Password must contain minimum 1 special character
+                </li>
+                <li id="number">
+                    Password must contain minimum 1 number
+                </li>
+            </ul>
+        </span><br><br>
+        <input type="password" name="confirm password" id="conf_pass" placeholder="Confirm Password" onfocus="visible2()"><br><br>
+        <button id = submit onclick="conf()"><strong>Set Password</strong></button>
+    </div>
+</body>
+</html>

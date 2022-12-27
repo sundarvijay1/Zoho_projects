@@ -1,0 +1,160 @@
+body{
+    height: 99vh;
+    overflow-y: hidden;
+
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.set{
+    position: relative;
+    background: whitesmoke;
+    height: 50px;
+    width: 100px;
+    display: none;
+    left: 93%;
+    border-radius: 5px;
+
+}
+.container div{
+    margin: 10px;
+    height: 20px;
+    width: 75px;
+    border: 2px solid red;
+    background-color: black;
+}
+.pad{
+    position: fixed;
+    top: 90%;
+    left: 45%;
+}
+
+#ball{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: fixed;
+    border-radius: 10px;
+    left: 48%;
+    top: 87%;
+}
+#paddle{
+    height: 15px;
+    width:105px;
+    background-color: green;
+    border-radius: 5px;
+    /* left: 45%; */
+}
+.details{
+    background-color: aqua;
+    display: flex;
+    align-content: center;
+}
+.details p{
+    position: relative;
+    display: inline;
+}
+.details img{
+    display:inline;
+}
+#settings{
+    position: relative;
+    top: 10px;
+    height: 25px;
+    width: 25px;
+    left: 78%;
+}
+#timer{
+    left:-5%;
+}
+#life{
+    left: 20%;
+}
+#level{
+    left:35%;
+}
+#score{
+    left: 80%;
+}
+.levelup{
+    position: absolute;
+    height: 550px;
+    width: 500px;
+    background: white;
+    border-radius: 8px;
+    top: 9%;
+    left: 460px;
+    padding: 10px;
+    font-family:'Verdana';
+    visibility: hidden;
+}
+.levelup h1{
+    display: flex;
+    justify-content: center;
+    color: green;
+}
+#gif{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+#close{
+    position:relative;
+    height: 20px;
+    width: 20px;
+    top: 2%;
+    left:95%;
+}
+.gamewon{
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 15%;
+    height: 350px;
+    width: 500px;
+    background: white;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.gamewon h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+}
+
+.gamelose{
+    position:absolute;
+    margin-left: 500px;
+    margin-top: 15%;
+    height: 350px;
+    width: 500px;
+    background: white;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.gamelose h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+}
+#btnrestart{
+    position: relative;
+    top: 10px;
+    left: 200px;
+    border: none;
+    background-color: #F42923 ;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+#gifResult{
+    position: relative;
+    left: 170px;
+    height: 150px;
+    width: 150px;
+}
